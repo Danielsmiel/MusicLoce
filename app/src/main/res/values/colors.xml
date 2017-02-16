@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#F0F0F0</color>
+    <color name="red">#C62F2F</color>
+    <color name="transparent">#00000000</color>
+    <color name="orag">#F15C18</color>
+    <color name="pink">#F15C18</color>
+    <color name="dack_green">#05262B</color>
+    <color name="halftransparent">#1cffffff</color>
+    <color name="haldarkftransparent">#5c000000</color>
+
+</resources>

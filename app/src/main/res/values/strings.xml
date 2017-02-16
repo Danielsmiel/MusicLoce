@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">音乐播放器</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="main_netmusic_rb">网络音乐</string>
+    <string name="main_localmusic_rb">本地音乐</string>
+    <string name="main_findmusic_rb">查找音乐</string>
+    <string name="title_activity_music">MusicActivity</string>
+    <string name="frag_local_singer_btn">歌手</string>
+    <string name="frag_local_song_btn">歌曲</string>
+    <string name="frag_local_album_btn">专辑</string>
+    <string name="title_activity_net_music_list">NetMusicListActivity</string>
+
+</resources>

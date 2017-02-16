@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RadioGroup
+        android:id="@+id/frag_local_music_rg"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/frag_local_song_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/frag_local_song_btn"
+            android:textColor="@drawable/frag_local_btn_selector" />
+
+        <RadioButton
+            android:id="@+id/frag_local_singer_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/frag_local_singer_btn"
+            android:textColor="@drawable/frag_local_btn_selector" />
+
+        <RadioButton
+            android:id="@+id/frag_local_album_rb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/transparent"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/frag_local_album_btn"
+            android:textColor="@drawable/frag_local_btn_selector" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/frag_local_fl"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+    </FrameLayout>
+
+</LinearLayout>

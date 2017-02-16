@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home" >
+
+    <LinearLayout
+        android:id="@+id/main_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <RadioGroup
+            android:id="@+id/main_rg"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_netmusic_rb"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="@string/main_netmusic_rb"
+                android:textColor="@drawable/main_rb_selector" />
+
+            <RadioButton
+                android:id="@+id/main_localmusic_rb"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/main_localmusic_rb"
+                android:textColor="@drawable/main_rb_selector" />
+
+            <RadioButton
+                android:id="@+id/main_findmusic_rb"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:button="@null"
+                android:gravity="center"
+                android:text="@string/main_findmusic_rb"
+                android:textColor="@drawable/main_rb_selector" />
+        </RadioGroup>
+
+        <View
+            android:id="@+id/main_orag_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/main_rg"
+            android:background="@color/red" />
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/main_vp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/main_bottom_ll"
+        android:layout_below="@+id/main_ll" />
+
+    
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/main_bottom_ll">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/main_bottom_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/dack_green"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/main_music_icon_iv"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical|left"
+            android:layout_margin="5dp"
+            android:background="@drawable/icon_music" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/main_music_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌曲:未知"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/main_music_singer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="歌手:未知"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/main_play_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_play_normal" />
+
+            <Button
+                android:id="@+id/main_next_btn"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_next_normal" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
